@@ -1,12 +1,10 @@
 import { Navbar, Hero, Footer } from "./components"
-import { hero } from "./data/roamifydata"
+import { hero, navlinks } from "./data/roamifydata"
 
 function App() {
-
-
   return (
     <>
-      <Navbar />
+      <Navbar navlinks={navlinks} />
       <Hero hero={hero} />
       <Footer />
     </>
