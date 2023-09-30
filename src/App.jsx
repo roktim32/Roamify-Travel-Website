@@ -1,5 +1,5 @@
-import { Navbar, Hero, Footer, Memory } from "./components"
-import { hero, navlinks, memory } from "./data/roamifydata"
+import { Navbar, Hero, Footer, Memory, Explore } from "./components"
+import { hero, navlinks, memory, placesAPI } from "./data/roamifydata"
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Navbar navlinks={navlinks} />
       <Hero hero={hero} />
       <Memory memory={memory} />
+      <Explore title="Explore The Beautiful World" placesAPI={placesAPI} />
       <Footer />
     </>
   )
